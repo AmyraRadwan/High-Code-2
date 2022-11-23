@@ -1,0 +1,143 @@
+/*
+RESET hier werden so standart browsereinstellungen resettet, die am ende irgendwelche sachen durcheinanderbringen die man dann nicht versteht. oder so nervige sachen wie der standartmäßige umgang mit links
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+a { /*links*/
+    color: black;
+    text-decoration: none;
+}
+
+ol, /*ol= ordered lists, ul=unordered lists*/
+ul {
+    list-style: none;
+}
+
+img { /*bilder*/
+    width: 100%;
+}
+
+/*
+BASE RULES
+*/
+
+/*einbindung von schriftdateien*/
+@font-face {
+    font-family: Saint;
+    src: url('../fonts/Saint2022/Saint\ Regular.ttf'); /*URL zu dem ordner, in dem die schrift liegt. dieser sollte sich in dem verzeichnis der website befinden.*/
+}
+
+@font-face {
+    font-family: Facade;
+    src: url('../fonts/facade/FacadeGX.ttf');
+}
+
+@font-face {
+    font-family: Edu Monument;
+    src: url(../fonts/EduMonumentGroteskVariable.ttf);
+}
+
+
+/*einbindung des hintergrunds von magicpattern.design*/
+body {
+    background-color: #e5e5f7; 
+    background-image:  linear-gradient(#43278f 2px, transparent 2px), linear-gradient(to right, #43278f 2px, #e5e5f7 2px);
+    background-size: 8rem 8rem;
+}
+
+header {
+    display: flex; /*so können mehrere elemente nebeneinander angezeigt werden. für mehr infos geh einfach mal auf den link zu "how to flexbox"*/
+    justify-content: space-between; /*ordnet den content horizontal an. senkrechte anordnung wird über align-items geregelt*/
+}
+
+a {
+    font-family: Edu Monument, Arial, Helvetica, sans-serif;/*schriftart*/
+
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.link1 { /*mit dem . wird eine klasse angesprochen. so beziehen sich die css-eigenschaften ausschließlich auf diese klasse, und nicht alle <a> elemente*/
+    position: absolute; /*mit position: absolute; setzt man das element quasi ein layer auf alle anderen, aber innerhalb seines elternelements. hier bestimmt man die position nicht durch margin oder padding, sondern über top, right, left, bottom*/
+    top: 11vw; /*vw=viewport width also (hier) 11% der fensterbreite*/
+    left: 60vw;/*vw=viewport width also (hier) 60% der fensterbreite*/
+
+    font-size: calc(0.5rem + 6vmin);
+    font-weight: 550;/*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
+    color: red; /*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+}
+
+.link2 {
+    position: absolute;/*mit position: absolute; setzt man das element quasi ein layer auf alle anderen, aber innerhalb seines elternelements. hier bestimmt man die position nicht durch margin oder padding, sondern über top, right, left, bottom*/
+    top: 18vw;/*vw=viewport width also (hier) 18% der fensterbreite*/
+    left: 78.5vw;/*vw=viewport width also (hier) 78.5% der fensterbreite*/
+
+    font-size: calc(0.5rem + 6vmin);
+    font-weight: 550;/*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
+    color: red;/*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+}
+
+.link1:hover, /*:hover=wenn-ich-mit-dem-mauszeiger-drüber-fahre, also das, was mit dem element passieren soll, wenn der mauszeiger darüber ist. das ist das einzige css attribut, das die position des mauszeigers ausliest. wenn mann zb on-click-events belegen will muss man javascript benutzen*/
+.link2:hover {
+    color: #00FFFF; /*farben können zb über rgb codes oder hexcodes angegeben werden*/
+}
+
+.help {
+    font-size: 1.25rem;
+    margin-left: 15px; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+}
+
+.help:hover {
+    color: red;/*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+}
+
+/*eigenschaften des h1 elements*/
+h1 {
+    font-family: Saint, Arial, Helvetica, sans-serif;/*schriftart*/
+    font-size: calc(0.5rem + 8vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
+    color: #66FF14;
+    text-shadow: 4px 4px 3px #43268F; /*abstand auf der x-achse in px, abstand auf der y-achse in px, shadow-blur in px*/
+    margin: 0 auto; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+    padding: 2.5rem 1rem;
+}
+
+h3 {
+    font-family: Facade, monospace;/*schriftart*/
+    font-size: calc(0.5rem + 3vmin);/*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
+    font-weight: 600; /*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
+    margin-bottom: 0.5rem; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+
+}
+
+div {
+    max-width: 70ch; 
+    backdrop-filter: blur(4px); /* Hintergrund-Filter mit verschiedenen Optionen zur veränderung des Hintergrunds von ELementen. */
+    border: 2px solid #43268F; /*border=rand/kontur. solid=durchgehend. es gibt noch dotted, und bestimmt noch ganz viel mehr.*/
+    border-radius: 10px; /* Rand-Radius. Ermöglicht runde Ecken. */
+    padding: 0.5rem;
+    margin: 0 3rem 4rem 3rem; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+}
+
+main div:nth-child(2){ /*wenn man ein element nicht über eine klasse ansprechen will, kann man sich auch durch die html struktur "navigieren". man kann sich das so vorstellen, als würde man sich durch Ordner im Finder/Explorer durchklicken. wenn mehrere elemente einer Art auswählbar sind, kann man :first-child oder :last-child nutzen, um sie anzusprechen. child + parent sind unter- und übergeordnete elemente*/
+    align-self: flex-end;
+}
+
+p {
+    font-family: Edu Monument, Arial, Helvetica, sans-serif; /*schriftart*/
+    max-width: 70ch; 
+    font-size: calc(0.5rem + 1.5vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
+    margin: 0 0 0 15px;/*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+}
+
+
