@@ -1,12 +1,12 @@
-/*
-RESET hier werden so standart browsereinstellungen resettet, die am ende irgendwelche sachen durcheinanderbringen die man dann nicht versteht. oder so nervige sachen wie der standartmäßige umgang mit links
-*/
+/* ---------------------------------------------------------------------
+    RESET von Standard Browsereinstellungen die je nach Browser variieren
+------------------------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-weight: normal;
-    font-size: 100%;
+    font-size: 16px;
 }
 
 a { /*links*/
@@ -19,15 +19,17 @@ ul {
     list-style: none;
 }
 
-img { /*bilder*/
+img { /* bilder */
     width: 100%;
 }
 
-/*
-BASE RULES
-*/
+b {
+    font-weight: 900;
+}
 
-/*einbindung von schriftdateien*/
+/* --------------------------------
+    Einbindung von Schriftdateien
+----------------------------------- */
 @font-face {
     font-family: Saint;
     src: url('../fonts/Saint2022/Saint\ Regular.ttf'); /*URL zu dem ordner, in dem die schrift liegt. dieser sollte sich in dem verzeichnis der website befinden.*/
@@ -40,11 +42,12 @@ BASE RULES
 
 @font-face {
     font-family: Edu Monument;
-    src: url(../fonts/EduMonumentGroteskVariable.ttf);
+    src: url('../fonts/EduMonumentGroteskVariable.ttf');
 }
 
-
-/*einbindung des hintergrunds von magicpattern.design*/
+/* ---------------------------------------------------------------------------------------------
+    MAIN: Raster/Ausrichtung von Elementen und einbindung des Hintergrunds (magicpattern.design)
+------------------------------------------------------------------------------------------------ */
 body {
     background-color: #e5e5f7; 
     background-image:  linear-gradient(#43278f 2px, transparent 2px), linear-gradient(to right, #43278f 2px, #e5e5f7 2px);
@@ -52,20 +55,23 @@ body {
 }
 
 header {
-    display: flex; /*so können mehrere elemente nebeneinander angezeigt werden. für mehr infos geh einfach mal auf den link zu "how to flexbox"*/
-    justify-content: space-between; /*ordnet den content horizontal an. senkrechte anordnung wird über align-items geregelt*/
+    display: flex; /* Mehrere Elemente nebeneinander angezeigen. Mehr unter: "how to flexbox". */
+    justify-content: space-between; /* Ordnet den content horizontal an. Senkrechte Anordnung kann über "align-items" erreicht werden. */
 }
 
-a {
-    font-family: Edu Monument, Arial, Helvetica, sans-serif;/*schriftart*/
-
-}
-
-
+/* Einrücken der Container div's über Flexbox */
 main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+/* --------------
+    LINKS
+----------------*/
+
+a {
+    font-family: Edu Monument, Arial, Helvetica, sans-serif; /* Schriftart, siehe wie weiter oben eingebunden. */
 }
 
 .link1 { /*mit dem . wird eine klasse angesprochen. so beziehen sich die css-eigenschaften ausschließlich auf diese klasse, und nicht alle <a> elemente*/
@@ -94,15 +100,21 @@ main {
 }
 
 .help {
-    font-size: 1.25rem;
-    margin-left: 15px; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+    font-size: calc(0.5rem + 1vmin);
+    text-decoration: underline;
+    text-underline-offset: 0.1rem;
+    margin-left: 15px;
+     /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
 }
 
 .help:hover {
     color: red;/*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+    font-style: italic;
 }
 
-/*eigenschaften des h1 elements*/
+/* --------------------
+    EINZELNE ELEMENTE
+----------------------- */
 h1 {
     font-family: Saint, Arial, Helvetica, sans-serif;/*schriftart*/
     font-size: calc(0.5rem + 8vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
@@ -136,8 +148,8 @@ main div:nth-child(2){ /*wenn man ein element nicht über eine klasse ansprechen
 p {
     font-family: Edu Monument, Arial, Helvetica, sans-serif; /*schriftart*/
     max-width: 70ch; 
-    font-size: calc(0.5rem + 1.5vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
-    margin: 0 0 0 15px;/*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+    font-size: calc(0.5rem + 1vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
+    margin-left: 15px;/*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
 }
 
 
