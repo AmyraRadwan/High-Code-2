@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de"> 
+
+<head> <!--im <head> sind alle meta-daten zu der webseite. also alle daten, die man NICHT direkt sehen kann. wenn man kein seperates css stylesheet hat, würde man das css hier mit dem element <style> </style> schreiben-->
+    <meta charset="UTF-8"> <!--dadurch können sonderzeichen wie zb. äöü oder emojis angezeigt werden, sofern der browser das untersützt-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--browserkompatibilität-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>high code workshop #1</title> <!--titel der website, der im TAB angezeigt wird-->
+    <link rel="stylesheet" href="assets/css/style.css"> <!--verlinkung zum css-sheet-->
+</head>
+
+<body> <!--im <body> ist alles, was man auf der webseite sehen kann-->
+    <header> <!--header beschreibt den oberen teil der website, der meist die navigation, vielleicht den namen der website und zb ein menü enthalten kann. für die technische funktionalität ist das nicht zwingend notwendig, aber für die semantik ist es sehr wichtig (stichwort SEOs)-->
+        <h1>⛓WELCOME FELLOW FMNSTS⛓</h1> <!--überschrift höchsten ranges (h1). es gibt h1-h6-->
+        <a class="link1" href="#" target="_blank">klick mich</a><!--<a> elemente sind verlinkungen. target_blank sorgt dafür, dass der link in einem neuen tab geöffnet wird. wenn man aber zu keiner neuen webseite navigiert wird einfach die webseite von der man kommt nochmal in einem neuen tab geöffnet. mit der klasse (class) kann man das element gezielt im css ansprechen-->
+        <a class="link2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">los jetzt</a> 
+    </header><!--hier wird das header element wieder geschlossen-->
+
+    <main> <!--der mein Teil der webseite. also der hauptinhalt-->
+        <div> <!-- das <div> element ist ein sogenanntes container element-->
+            <h3>aufgabe:</h3> <!--überschrift dritten ranges-->
+            <p><!--p=paragraph, also ein textabschnitt-->
+                eure aufgabe besteht aus [...]<br>
+                coden besteht zu 85% aus sich-sachen-ergooglen. das grundprinzip zu verstehen ist schon die halbe miete. manchmal ist das größte problem, dass man nicht genau weiß, wonach man googlen soll. seiten wie w3schools, 
+                stackoverflow und csstricks sind immer sehr gute anlaufstellen um anständige antworten zu bekommen.<br>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo 
+                dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt 
+                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+            </p>
+        </div>
+
+        <div>
+            <h3>hier sind noch ein paar nützliche Links:</h3>
+            <a class="help" href="https://htmlcolorcodes.com" target="_blank">html color codes</a> <br> <!--<br> = break und sorgt für einen zeilenumbruch-->
+            <a class="help" href="https://www.loremipsum.de" target="_blank">lorem ipsum generator</a> <br>
+            <a class="help" href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank">coole hintergründe</a> <br>
+            <a class="help" href="https://wiki.selfhtml.org/wiki/HTML/Elemente" target="_blank">selfhtml – liste der html elemente</a> <br>
+            <a class="help" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">how to flexbox</a> <br>
+            <a class="help" href="https://flexboxfroggy.com/#de" target="_blank">flexbox froggy</a>
+        </div>
+    </main>
+
+    <footer>
+        <!--hier könnte ein footer sein. klassischer weise mit impressum, kontakt, und so krams.-->
+    </footer>
+    
+</body>
+</html>
