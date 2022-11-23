@@ -1,7 +1,10 @@
 # High-Code-2
 High Code Workshop Two
 
-heute werden wir javasript erkunden... yay!
+Heute werden wir Javasript erkunden... yay!
 
-tagesziel ist es selbst eine variable font einzubinden und diese mit javascript zu animieren. wenn wir es schaffen binden wir danach noch eine css library ein mit der wir die schrift maximal annoying zu machen.
-*auf gehts!*
+Tagesziel ist es:
+
+1. selbst eine Variable Schrift einzubinden und diese mit Javascript zu animieren.
+2. Wenn wir es schaffen binden wir danach noch eine CSS Library ein mit der wir die Schrift maximal annoying machen.
+**auf gehts!**
