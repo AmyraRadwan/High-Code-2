@@ -33,26 +33,6 @@ b {
     Einbindung von Schriftdateien
 ----------------------------------- */
 
-@font-face {
-	font-family: Edu Monument;
-	src: url("../fonts/EduMonumentGroteskVariable.ttf");
-}
-
-@font-face {
-	font-family: Bandeins;
-	src: url("../fonts/BandeinsStrangeVariableGX.ttf");
-}
-
-@font-face {
-	font-family: Movement;
-	src: url("../fonts/MovementV.ttf");
-}
-
-@font-face {
-	font-family: Collective Patterns;
-	src: url("../fonts/CollectivePatternsVF.ttf");
-}
-
 /* ---------------------------------------------------------------------------------------------
     MAIN: Raster/Ausrichtung von Elementen und einbindung des Hintergrunds (magicpattern.design)
 ------------------------------------------------------------------------------------------------ */
@@ -159,14 +139,12 @@ h3 {
 	font-size: calc(0.5rem + 3vmin); /* Schriftgröße in rem. Die Größe rem bezieht sich auf das Root-Element. So kann man Schriften voneinander abhängig machen -> Semantik. Standardmäßig ist 1rem = 16px */
 	font-weight: 600; /* Hiermit setzt man Schriften z.B. bold oder thin. Der Wert 400 ist regular und 600 ist bold. Bei variablen Schriften kann man auch Werte dazwischen setzen, bei Schriften die nicht variable sind, ändert sich dann nichts. */
 	margin: 0.5rem; /* Man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px Abstand. Das ganze geht also im Uhrzeigersinn */
-	font-variation-settings: "wght" 200, "wdth" 200; /* Hier wird die Stärke und Breite von variablen Schriften eingestellt. Valide Werte sind `100` `200` `300` ... `900` */
-	transition: font-variation-settings 0.5s, color 0.5s, text-shadow 0.5s;
+	transition: color 0.5s, text-shadow 0.5s;
 }
 
 .text-container:hover > h3 {
 	color: #66ff14; /* color = Textfarbe. Um den Hintergrund zu ändern, muss man background-color verwenden. */
 	text-shadow: 0px 0px 10px #43268f; /* Abstand auf der x-Achse in px, Abstand auf der y-Achse in px, shadow-blur in px */
-	font-variation-settings: "wght" 600, "wdth" 100; /* Hier wird die Stärke und Breite von variablen Schriften eingestellt. Valide Werte sind `100` `200` `300` ... `900` */
 }
 
 .text-container {

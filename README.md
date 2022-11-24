@@ -17,11 +17,11 @@ Tagesziel ist es:
 
 **Auf geht's!**
 
-> Wenn du letztes mal nicht da warst kannst du mit unserer :point_right:[Vorlage]() arbeiten.
+> Wenn du letztes mal nicht da warst kannst du mit unsere :point_right:[Vorlage]() herunterladen und damit arbeiten.
 
 ## :sparkles: Step 1.0. – Einbinden einer variablen Schrift
 
-Lade dir die :point_right: [Schriftdateien](Variable-Fonts.zip) herunter, speichere sie unter `assets` in deinem `fonts` Ordner und binde sie folgendermaßen in deine CSS Datei ein.
+Lade dir die :point_right: [Schriftdateien](variable-fonts.zip) herunter, speichere sie unter `assets` in deinem `fonts` Ordner und binde sie folgendermaßen in deine CSS Datei ein.
 
 > `@font-face` ermöglicht das lokale einbinden von Schriftdateien. Mit `font-family` gibst du der Schrift einen Namen um sie dann mit diesem anzuwenden. Mit `src` gibst du den Pfad der Quelldatei an. Achte darauf das die Ordnerstruktur und der Dateiname stimmen.
 
