@@ -11,9 +11,11 @@ Tagesziel ist es:
 
 ## Step 1 – Einbinden einer variablen Schrift
 
-Lade dir die Schriftdateien runter und binde sie folgendermaßen in deine CSS Datei ein.
+Lade dir die [Schriftdateien]() runter und binde sie folgendermaßen in deine CSS Datei ein.
 
-> Wenn du letztes mal nicht da warst kannst du mit unserer Vorlage arbeiten.
+> `@font-face` ermöglicht das lokale einbinden von Schriftdateien. Mit `font-family` gibst du der Schrift einen Namen um sie dann mit diesem anzuwenden. Mit `src`gibst du den Pfad der Quelldatei an. Achte darauf das die Ordnerstruktur und der Dateiname stimmen.
+
+> Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
 
 ```
 @font-face {
