@@ -29,40 +29,48 @@
 
 		<main>
 			<!--Der Hauptteil der Webseite. Also der Hauptinhalt-->
-			<div>
+			<div class="text-container">
 				<!--Das <div> element ist ein sogenanntes Container-Element-->
-				<h3>aufgabe 1.0 html + css:</h3>
+				<h3>Aufgabe 1.0 HTML + CSS:</h3>
 				<!--Überschrift dritten ranges-->
 				<p>
 					<!--p = Paragraph, also ein Textabschnitt-->
-					eure aufgabe besteht aus [...]<br />
-					coden besteht zu 85% aus sich-sachen-ergooglen. das grundprinzip zu verstehen ist schon die halbe miete. manchmal ist das größte problem, dass man nicht genau weiß, wonach man googlen soll. seiten wie w3schools, stackoverflow und csstricks sind immer sehr gute anlaufstellen um anständige antworten zu bekommen.<br />
+					Coding besteht zu 85% aus sich-sachen-ergoogeln. Das Grundprinzip zu verstehen ist schon die halbe Miete. Manchmal ist das größte Problem, dass man nicht genau weiß, wonach man googeln soll. Seiten wie w3schools, stack overflow und css-tricks sind immer sehr gute Anlaufstellen um anständige Antworten zu bekommen.<br />
 				</p>
 			</div>
 
-			<div>
-				<h3>hier sind noch ein paar nützliche Links:</h3>
-				<a class="help" href="https://htmlcolorcodes.com" target="_blank">html color codes</a> <br />
-				<!--<br> = Break und sorgt für einen Zeilenumbruch-->
-				<a class="help" href="https://www.loremipsum.de" target="_blank">lorem ipsum generator</a> <br />
-				<a class="help" href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank">coole hintergründe</a> <br />
-				<a class="help" href="https://wiki.selfhtml.org/wiki/HTML/Elemente" target="_blank">selfhtml – liste der html elemente</a> <br />
-				<a class="help" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">how to flexbox</a> <br />
-				<a class="help" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">how to grid</a> <br />
-				<a class="help" href="https://flexboxfroggy.com/#de" target="_blank">flexbox froggy</a><br />
-				<a class="help" href="https://cssgridgarden.com/#de" target="_blank">grid garden</a><br />
-				<a class="help" href="https://css-tricks.com/centering-css-complete-guide/" target="_blank">centering things in css</a>
+			<div class="text-container">
+				<h3>Hier sind noch ein paar nützliche Links:</h3>
+				<div class="help-wrapper">
+					<a class="help" href="https://htmlcolorcodes.com" target="_blank">html: color codes</a>
+					<a class="help" href="https://www.loremipsum.de" target="_blank">text: generator</a>
+					<a class="help" href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank">coole hintergründe</a>
+					<a class="help" href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">css: flexbox</a>
+					<a class="help" href="https://wiki.selfhtml.org/wiki/HTML/Elemente" target="_blank">html: alle elemente</a>
+					<a class="help" href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">css: grid</a>
+					<a class="help" href="https://flexboxfroggy.com/#de" target="_blank">css: flexbox froggy</a>
+					<a class="help" href="https://cssgridgarden.com/#de" target="_blank">css: grid garden</a>
+					<a class="help" href="https://css-tricks.com/centering-css-complete-guide/" target="_blank">css: centering things</a>
+					<a class="help" href="https://www.w3schools.com/js/default.asp" target="_blank">js: tutorial</a>
+					<a class="help" href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_variables1" target="_blank">js: übungen</a>
+					<a class="help" href="https://css-tricks.com/almanac/properties/m/mix-blend-mode/" target="_blank">css: effekte</a>
+					<a class="help" href="https://css-tricks.com/almanac/properties/b/backdrop-filter/" target="_blank">css: hintergrund effekte</a>
+					<a class="help" href="https://tholman.com/obnoxious/" target="_blank">css: obnoxious.css</a>
+					<a class="help" href="https://tholman.com/cursor-effects/" target="_blank">js: 90's cursor effects</a>
+					<a class="help" href="https://animate.style/" target="_blank">css: animate.css</a>
+				</div>
+				</div>
 			</div>
 
-			<div>
-				<!-- Das <div> Element ist ein sogenanntes Container-Element-->
-				<h3>aufgabe 2.0 javascript:</h3>
+			<div class="text-container">
+				<!--Das <div> Element ist ein sogenanntes Container-Element-->
+				<h3>Aufgabe 2.0 Javascript:</h3>
 				<!--Überschrift dritten ranges-->
 				<p>
 					<!--p = Paragraph, also ein Textabschnitt-->
-					heute werden wir javasript erkunden... yay!<br />
-					tagesziel ist es selbst eine variable font einzubinden und diese mit javascript zu animieren. wenn wir es schaffen binden wir danach noch eine css library ein mit der wir die schrift maximal annoying zu machen.<br />
-					<b>auf gehts!</b>
+					Heute werden wir Javascript erkunden ... yay!<br />
+					Tagesziel ist es selbst eine Variable Schrift einzubinden und diese mit Javascript zu animieren. Wenn wir es schaffen binden wir danach noch eine CSS-Library ein mit der die Schrift maximal annoying wird.<br />
+					<b>Auf geht's!</b>
 				</p>
 			</div>
 		</main>
@@ -70,6 +78,8 @@
 		<footer>
 			<!--Hier könnte ein Footer sein. Klassischerweise mit Impressum, Kontakt, und so weiter.-->
 		</footer>
+		<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="assets/js/cursor.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 # :crystal_ball: High Code 2
 
-Heute werden wir Javasript erkunden... yay!
+Heute werden wir Javascript erkunden... yay!
 
 Tagesziel ist es:
 
@@ -15,13 +15,13 @@ Tagesziel ist es:
    - [2.1. – Einbinden der CSS-Library](https://github.com/AmyraRadwan/High-Code-2#fire-step-21--einbinden-der-css-library)
    - [2.2. – Animieren eines Elements](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-22--animieren-eines-elements)
 
-**Auf gehts!**
+**Auf geht's!**
 
 > Wenn du letztes mal nicht da warst kannst du mit unserer :point_right:[Vorlage]() arbeiten.
 
 ## :sparkles: Step 1.0. – Einbinden einer variablen Schrift
 
-Lade dir die :point_right:[Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
+Lade dir die :point_right: [Schriftdateien](Variable-Fonts.zip) herunter, speichere sie unter `assets` in deinem `fonts` Ordner und binde sie folgendermaßen in deine CSS Datei ein.
 
 > `@font-face` ermöglicht das lokale einbinden von Schriftdateien. Mit `font-family` gibst du der Schrift einen Namen um sie dann mit diesem anzuwenden. Mit `src` gibst du den Pfad der Quelldatei an. Achte darauf das die Ordnerstruktur und der Dateiname stimmen.
 
@@ -57,7 +57,7 @@ h1 {
 
 Prüfe jetzt ob deine Schrift angezeigt wird! :eyes:
 
-##### CSS Eigenschaft: `font-variation-settings`
+##### CSS-Eigenschaft: `font-variation-settings`
 
 Mit dieser Eigenschaft kannst du die Stärke und Breite von variablen Schriften einstellen. Probiere mit den Zahlen der Parametern "wght" und "wdth" deine Schrift einzustellen. Valide Werte sind `100` `200` `300` ... `900`
 
@@ -140,12 +140,12 @@ THE END :boom:
 
 ## :cyclone: Step 2.0. – CSS Library für maximal annoying Schrift
 
-Jetzt wirds richtig nervig. Aber nicht für uns! :innocent:
+Jetzt wird es richtig nervig. Aber nicht für dich! :innocent:
 Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Library von [Tim Holman](https://github.com/tholman).
 
 ## :fire: Step 2.1. – Einbinden der CSS-Library
 
-Um obnoxious.css einzubinden lade dir obnoxious.css :point_right: [hier](obnoxious.css.zip) herunter und speicher die Datei mir dem Namen `obnoxious.css` unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
+Um obnoxious.css einzubinden lade dir obnoxious.css :point_right: [hier](obnoxious.css.zip) herunter und speicher die Datei mir dem Namen `obnoxious.css` unter `assets` in deinen `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
 
 ```
 <head>
