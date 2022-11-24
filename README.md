@@ -51,16 +51,22 @@ Prüfe ob alles funktioniert :eyes:
 
 ## Step 1.1 – Einbinden einer Javascript Datei :fire:
 
-1. Erstelle in deinem **assets** Ordner einen Ordner **js**
-2. Erstelle darin eine Datei namens **main.js**
-3. Gehe in deine **index.html** und scrolle runter zum closing `</body>` tag.
-4. Erstelle eine Zeile über den Tag einen `<script src="main.js"></script>` tag.
+1. Erstelle in deinem `assets` Ordner einen Ordner `js`
+2. Erstelle darin eine Datei namens `main.js`
+3. Gehe in deine `index.html` und scrolle runter zum closing `</body>` tag.
+4. Erstelle eine Zeile über den Tag einen `<script src="assets/js/main.js"></script>` tag.
 
-Das ganze sollte dann so aussehen:
+Das Ende deiner HTML sollte dann so aussehen:
 
 ```
 ...
-        <script src="main.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
 ```
+
+### Überprüfe ob die Datei richtig eingebunden wurde :link:
+
+1. Öffne deine `main.js` Datei und schreibe `console log("Hello World");` rein.
+2. Speichern nicht vergessen.
+3. Öffne deine `index.html` Datei im Browser und öffne die Konsole (`option+cmd+i` oder Rechtsklick > Untersuchen/Inspect )
