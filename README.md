@@ -1,5 +1,4 @@
-# High-Code-2
-High Code Workshop Two
+# High Code 2
 
 Heute werden wir Javasript erkunden... yay!
 
