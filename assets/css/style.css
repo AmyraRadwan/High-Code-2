@@ -32,19 +32,25 @@ b {
 /* --------------------------------
     Einbindung von Schriftdateien
 ----------------------------------- */
-@font-face {
-	font-family: Saint;
-	src: url("../fonts/Saint2022/Saint\ Regular.ttf"); /*URL zu dem ordner, in dem die schrift liegt. dieser sollte sich in dem verzeichnis der website befinden.*/
-}
-
-@font-face {
-	font-family: Facade;
-	src: url("../fonts/facade/FacadeGX.ttf");
-}
 
 @font-face {
 	font-family: Edu Monument;
 	src: url("../fonts/EduMonumentGroteskVariable.ttf");
+}
+
+@font-face {
+	font-family: Bandeins;
+	src: url("../fonts/BandeinsStrangeVariableGX.ttf");
+}
+
+@font-face {
+	font-family: Movement;
+	src: url("../fonts/MovementV.ttf");
+}
+
+@font-face {
+	font-family: Collective Patterns;
+	src: url("../fonts/CollectivePatternsVF.ttf");
 }
 
 /* ---------------------------------------------------------------------------------------------
@@ -73,7 +79,7 @@ main {
 ----------------*/
 
 a {
-	font-family: Edu Monument, Arial, Helvetica, sans-serif; /* Schriftart, siehe wie weiter oben eingebunden. */
+	font-family: Bandeins, Arial, Helvetica, sans-serif; /* Schriftart, siehe wie weiter oben eingebunden. */
 }
 
 .link1 {
@@ -119,7 +125,7 @@ a {
     EINZELNE ELEMENTE
 ----------------------- */
 h1 {
-	font-family: Saint, Arial, Helvetica, sans-serif; /*schriftart*/
+	font-family: Bandeins, Arial, Helvetica, sans-serif; /*schriftart*/
 	font-size: calc(0.5rem + 8vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
 	color: #66ff14;
 	text-shadow: 4px 4px 3px #43268f; /*abstand auf der x-achse in px, abstand auf der y-achse in px, shadow-blur in px*/
@@ -128,7 +134,7 @@ h1 {
 }
 
 h3 {
-	font-family: Facade, monospace; /*schriftart*/
+	font-family: Movement, Arial, Helvetica, sans-serif; /*schriftart*/
 	font-size: calc(0.5rem + 3vmin); /*schriftgröße in rem. die größe rem bezieht sich auf das root element. so kann man schriften voneinaner abhängig machen->semantik. standartmäßig ist 1rem=16px, das kann aber im css mit html {font-size: XYpx} */
 	font-weight: 600; /*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
 	margin-bottom: 0.5rem; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
