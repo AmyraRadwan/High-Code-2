@@ -4,18 +4,19 @@ Heute werden wir Javasript erkunden... yay!
 
 Tagesziel ist es:
 
-Eine variable Schrift in CSS einbinden und mit Javascript zu animieren.
-1.0 – Einbinden einer variablen Schrift
-1.1 – Einbinden einer Javascript Datei
-1.2 – Die Schrift beim scrollen animieren
+1. Eine variable Schrift in CSS einbinden und mit Javascript zu animieren.
 
-Optional: Eine CSS Library einbinden für maximal annoying Schrift.
+   [1.0. Einbinden einer variablen Schrift](https://github.com/AmyraRadwan/High-Code-2#sparkles-step-10--einbinden-einer-variablen-schrift)
+   [1.1. Einbinden einer Javascript Datei](https://github.com/AmyraRadwan/High-Code-2#fire-step-11--einbinden-einer-javascript-datei)
+   [1.2. Die Schrift beim scrollen animieren](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-12--die-schrift-beim-scrollen-animieren)
+
+2. Optional: Eine CSS Library einbinden für maximal annoying Schrift.
 
 **Auf gehts!**
 
 > Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
 
-## :sparkles: Step 1.0 – Einbinden einer variablen Schrift
+## :sparkles: Step 1.0. – Einbinden einer variablen Schrift
 
 Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
 
@@ -53,7 +54,7 @@ h1 {
 
 Prüfe jetzt ob deine Schrift angezeigt wird! :eyes:
 
-## :fire: Step 1.1 – Einbinden einer Javascript Datei
+## :fire: Step 1.1. – Einbinden einer Javascript Datei
 
 1. Erstelle in deinem `assets` Ordner einen Ordner `js`
 2. Erstelle darin eine Datei namens `main.js`
@@ -77,7 +78,7 @@ Das Ende deiner HTML sollte so aussehen:
 4. Öffne die Konsole (`option`+`cmd`+`i` oder Rechtsklick > Untersuchen/Inspect).
 5. Wenn deine Nachricht in der Konsole ausgegeben wird hat alles geklappt! :clap:
 
-## :dizzy: Step 1.2 – Die Schrift beim scrollen animieren
+## :dizzy: Step 1.2. – Die Schrift beim scrollen animieren
 
 Jetzt animieren wir die Schrift beim scrollen.
 Fixiere ein Element auf deiner Seite beim scrollen mit `position: fixed` in deiner CSS-Datei.
