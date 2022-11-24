@@ -138,7 +138,7 @@ THE END :boom:
 ## :cyclone: Step 2.0. – CSS Library für maximal annoying Schrift
 
 Jetzt wirds richtig nervig. Aber nicht für uns! :innocent:
-Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Library von [Tim Holman](https://github.com/tholman).
+Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/){:target="\_blank" rel="noopener"} ein, eine CSS-Library von [Tim Holman](https://github.com/tholman){:target="\_blank" rel="noopener"}.
 
 ## :fire: Step 2.1. – Einbinden der CSS-Library
 
