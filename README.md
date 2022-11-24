@@ -44,7 +44,7 @@ Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/ma
 }
 ```
 
-Teile die Schrift jetzt einem Textelement oder Klasse deiner Wahl zu. (z.B. `h1` oder `.text`)
+Teste die Schrift jetzt indem du sie einem Textelement oder Klasse deiner Wahl zuordnest. (z.B. `h1` oder `.text`)
 
 ```
 h1 {
@@ -53,6 +53,18 @@ h1 {
 ```
 
 Prüfe jetzt ob deine Schrift angezeigt wird! :eyes:
+
+### CSS Eigenschaft: `font-variation-settings`
+
+Mit dieser Eigenschaft kannst du die Stärke und Breite von variablen Schriften einstellen. Probiere mit den Zahlen der Parametern "wght" und "wdth" deine Schrift einzustellen. Valide Werte sind `100` `200` `300` ... `900`
+
+```
+h1 {
+    font-variation-settings: "wght" 100, "wdth" 100;
+}
+```
+
+> Du kannst diese Werte z.B. durch `h1:hover` beim mit der Maus drüber fahren verändern.
 
 ## :fire: Step 1.1. – Einbinden einer Javascript Datei
 
@@ -130,7 +142,7 @@ Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Lib
 
 ### Step 2.1. Einbinden der CSS-Library
 
-Um obnoxious.css einzubinden lade dir die Datei [hier]() herunter und speicher sie unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
+Um obnoxious.css einzubinden lade dir obnoxious.css [hier](https://github.com/tholman/obnoxious.css) herunter und speicher die Datei mir dem Namen unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
 
 ```
 <head>

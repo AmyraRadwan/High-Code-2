@@ -91,6 +91,8 @@ a {
 	font-size: calc(0.5rem + 6vmin);
 	font-weight: 550; /*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
 	color: red; /*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+	font-variation-settings: "wght" 100, "wdth" 100;
+	transition: font-variation-settings 0.2s;
 }
 
 .link2 {
@@ -101,11 +103,17 @@ a {
 	font-size: calc(0.5rem + 6vmin);
 	font-weight: 550; /*hiermit setzt man schriften zb bold oder thin. der wert 400 ist regular und 600 ist bold. bei variable fonts kann man auch werte dazwischen setzen, bei schriften die nicht variable sind, ändert sich dann nichts.*/
 	color: red; /*color = textfarbe. um den hintergrund zu ändern, muss man background-color verwenden*/
+	font-variation-settings: "wght" 100, "wdth" 100;
+	transition: font-variation-settings 0.2s;
 }
 
 .link1:hover, /*:hover=wenn-ich-mit-dem-mauszeiger-drüber-fahre, also das, was mit dem element passieren soll, wenn der mauszeiger darüber ist. das ist das einzige css attribut, das die position des mauszeigers ausliest. wenn mann zb on-click-events belegen will muss man javascript benutzen*/
 .link2:hover {
-	color: #00ffff; /*farben können zb über rgb codes oder hexcodes angegeben werden*/
+	font-variation-settings: "wght" 900, "wdth" 200;
+}
+
+nav a:hover {
+	font-variation-settings: "wght" 900, "wdth" 200;
 }
 
 .help {
