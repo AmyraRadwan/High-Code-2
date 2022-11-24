@@ -9,13 +9,13 @@ Tagesziel ist es:
 
 **Auf gehts!**
 
+> Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
+
 ## Step 1 – Einbinden einer variablen Schrift
 
 Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
 
-<sub> `@font-face` ermöglicht das lokale einbinden von Schriftdateien. Mit `font-family` gibst du der Schrift einen Namen um sie dann mit diesem anzuwenden. Mit `src` gibst du den Pfad der Quelldatei an. Achte darauf das die Ordnerstruktur und der Dateiname stimmen. </sub>
-
-> Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
+> `@font-face` ermöglicht das lokale einbinden von Schriftdateien. Mit `font-family` gibst du der Schrift einen Namen um sie dann mit diesem anzuwenden. Mit `src` gibst du den Pfad der Quelldatei an. Achte darauf das die Ordnerstruktur und der Dateiname stimmen.
 
 ```
 @font-face {
