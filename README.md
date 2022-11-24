@@ -4,13 +4,13 @@ Heute werden wir Javasript erkunden... yay!
 
 Tagesziel ist es:
 
-1. Eine variable Schrift in CSS einbinden und mit Javascript zu animieren.
+1. Eine variable Schrift in CSS einbinden und mit Javascript zu animieren:
 
    - [1.0. Einbinden einer variablen Schrift](https://github.com/AmyraRadwan/High-Code-2#sparkles-step-10--einbinden-einer-variablen-schrift)
    - [1.1. Einbinden einer Javascript Datei](https://github.com/AmyraRadwan/High-Code-2#fire-step-11--einbinden-einer-javascript-datei)
    - [1.2. Die Schrift beim scrollen animieren](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-12--die-schrift-beim-scrollen-animieren)
 
-2. Optional: Eine CSS Library einbinden für maximal annoying Schrift.
+2. Optional: Eine CSS Library einbinden für maximal annoying Schrift:
 
 **Auf gehts!**
 
@@ -92,7 +92,7 @@ h1 {
 
 Öffne als nächstes deine `main.js` Datei und kopiere diesen Code rein.
 
-> :warning: Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns diesmal vertrauen. Wir erklären euch danach wie es funktioniert.
+> :warning: Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns dieses mal vertrauen. Wir erklären euch unten wie es funktioniert.
 
 ```
 const h1 = document.querySelector("h1");
@@ -107,7 +107,7 @@ window.addEventListener("scroll", function () {
 });
 ```
 
-### :question: Erklärung:
+### Erklärung:
 
 1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
 2. Eine Funktion die bei dem Event scroll etwas auf der Seite ausgeführt wird erstellt.
@@ -118,3 +118,22 @@ window.addEventListener("scroll", function () {
 7. Somit verändern sich die Werte dieser CSS-Eigenschaft beim scrollen.
 
 > Wenn du ein anderes Element (z.B. `p` oder `.text`) animieren möchtest, muss dieses statt "h1" in die Konstante oben gespeichert werden. Probiere ein wenig mit den Zahlen der der Konstanten `wght` und `wdth` herum um für deine Scroll Länge und Schrift die richtige Einstellung zu finden.
+
+THE END :boom:
+
+... wait ... :shit:
+
+## :cyclone: Step 2.0. – CSS Library für maximal annoying Schrift
+
+Jetzt wirds richtig nervig. Aber nicht für uns! :innocent:
+Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Library von [Tim Holman](https://github.com/tholman).
+
+### Step 2.1. Einbinden der CSS-Library
+
+Um obnoxious.css einzubinden lade dir die Datei [hier]() herunter und speicher sie unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
+
+```
+<head>
+  <link rel="stylesheet" href="assets/css/obnoxious.css">
+</head>
+```
