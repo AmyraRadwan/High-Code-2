@@ -11,7 +11,7 @@ Tagesziel ist es:
 
 > Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
 
-## Step 1.0 – Einbinden einer variablen Schrift
+## Step 1.0 – Einbinden einer variablen Schrift :sparkles:
 
 Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
 
@@ -47,4 +47,20 @@ h1 {
 }
 ```
 
-## Step 1.1 –
+Prüfe ob alles funktioniert :eyes:
+
+## Step 1.1 – Einbinden einer Javascript Datei :fire:
+
+1. Erstelle in deinem **assets** Ordner einen Ordner **js**
+2. Erstelle darin eine Datei namens **main.js**
+3. Gehe in deine **index.html** und scrolle runter zum closing `</body>` tag.
+4. Erstelle eine Zeile über den Tag einen `<script src="main.js"></script>` tag.
+
+Das ganze sollte dann so aussehen:
+
+```
+...
+        <script src="main.js"></script>
+    </body>
+</html>
+```
