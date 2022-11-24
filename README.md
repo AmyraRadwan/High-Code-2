@@ -10,7 +10,10 @@ Tagesziel ist es:
    - [1.1. Einbinden einer Javascript Datei](https://github.com/AmyraRadwan/High-Code-2#fire-step-11--einbinden-einer-javascript-datei)
    - [1.2. Die Schrift beim scrollen animieren](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-12--die-schrift-beim-scrollen-animieren)
 
-2. Optional: Eine CSS Library einbinden für maximal annoying Schrift:
+2. Optional:
+   - [2.0. – CSS Library für maximal annoying Schrift](https://github.com/AmyraRadwan/High-Code-2#cyclone-step-20--css-library-f%C3%BCr-maximal-annoying-schrift)
+   - [2.1. – Einbinden der CSS-Library](https://github.com/AmyraRadwan/High-Code-2#fire-step-21--einbinden-der-css-library)
+   - [2.2. – Animieren eines Elements](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-22--animieren-eines-elements)
 
 **Auf gehts!**
 
@@ -54,7 +57,7 @@ h1 {
 
 Prüfe jetzt ob deine Schrift angezeigt wird! :eyes:
 
-### CSS Eigenschaft: `font-variation-settings`
+##### CSS Eigenschaft: `font-variation-settings`
 
 Mit dieser Eigenschaft kannst du die Stärke und Breite von variablen Schriften einstellen. Probiere mit den Zahlen der Parametern "wght" und "wdth" deine Schrift einzustellen. Valide Werte sind `100` `200` `300` ... `900`
 
@@ -82,7 +85,7 @@ Das Ende deiner HTML sollte so aussehen:
 </html>
 ```
 
-### :link: Überprüfe ob die Datei richtig eingebunden wurde
+###### :link: Überprüfe ob die Datei richtig eingebunden wurde
 
 1. Öffne deine `main.js` Datei und schreibe `console.log("Hello World");` rein.
 2. Speichern nicht vergessen.
@@ -119,7 +122,7 @@ window.addEventListener("scroll", function () {
 });
 ```
 
-### Erklärung:
+###### Erklärung:
 
 1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
 2. Eine Funktion die bei dem Event scroll etwas auf der Seite ausgeführt wird erstellt.
@@ -138,7 +141,7 @@ THE END :boom:
 ## :cyclone: Step 2.0. – CSS Library für maximal annoying Schrift
 
 Jetzt wirds richtig nervig. Aber nicht für uns! :innocent:
-Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/){:target="\_blank" rel="noopener"} ein, eine CSS-Library von [Tim Holman](https://github.com/tholman){:target="\_blank" rel="noopener"}.
+Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Library von [Tim Holman](https://github.com/tholman).
 
 ## :fire: Step 2.1. – Einbinden der CSS-Library
 
@@ -154,11 +157,11 @@ Um obnoxious.css einzubinden lade dir obnoxious.css [hier](https://github.com/th
 
 Um ein Element zu animieren musst du ihm nur die Klasse `animated` mit einer der folgenden Klassen zusammen geben:
 
-– shakeit
-– intensifies
-– fontalicious
-– strobe
-– twister
+- shakeit
+- intensifies
+- fontalicious
+- strobe
+- twister
 
 Zum Beispiel so:
 
