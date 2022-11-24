@@ -140,7 +140,7 @@ THE END :boom:
 Jetzt wirds richtig nervig. Aber nicht für uns! :innocent:
 Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Library von [Tim Holman](https://github.com/tholman).
 
-### Step 2.1. Einbinden der CSS-Library
+## :fire: Step 2.1. – Einbinden der CSS-Library
 
 Um obnoxious.css einzubinden lade dir obnoxious.css [hier](https://github.com/tholman/obnoxious.css) herunter und speicher die Datei mir dem Namen unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
 
@@ -149,3 +149,23 @@ Um obnoxious.css einzubinden lade dir obnoxious.css [hier](https://github.com/th
   <link rel="stylesheet" href="assets/css/obnoxious.css">
 </head>
 ```
+
+## :dizzy: Step 2.2. – Animieren eines Elements
+
+Um ein Element zu animieren musst du ihm nur die Klasse `animated` mit einer der folgenden Klassen zusammen geben:
+
+– shakeit
+– intensifies
+– fontalicious
+– strobe
+– twister
+
+Zum Beispiel so:
+
+```
+<h1 class="animated intensifies">Annoying, too loud, to messy!</h1>
+```
+
+> Probiere einfach ein bisschen rum.
+
+THE REAL END :boom:
