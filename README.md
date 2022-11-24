@@ -76,7 +76,16 @@ Das Ende deiner HTML sollte dann so aussehen:
 ## Step 1.2 – Die Schrift beim scrollen animieren :dizzy:
 
 Jetzt animieren wir die Schrift beim scrollen.
-Öffne deine `main.js` Datei und kopiere diesen Code rein.
+Fixiere ein Element auf deiner Seite beim scrollen mit `position: fixed` in deiner CSS-Datei.
+
+```
+h1 {
+    position: fixed; /* Fixiert das Element beim scrollen */
+    z-index: 2; /* Hebt das Element auf der z-Achse über die anderen */
+}
+```
+
+Öffne als nächstes deine `main.js` Datei und kopiere diesen Code rein.
 
 > Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns diesmal vertrauen. Wir erklären euch danach wie es funktioniert.
 
@@ -86,8 +95,8 @@ const h1 = document.querySelector("h1");
 window.addEventListener("scroll", function () {
 	const pixels = window.pageYOffset;
 
-	const wght = 100 + pixels * 0.4;
-	const wdth = 100 + pixels * 0.1;
+	const wght = 100 + pixels * 0.9;
+	const wdth = 100 + pixels * 0.9;
 
 	h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`;
 });
@@ -95,12 +104,12 @@ window.addEventListener("scroll", function () {
 
 ### Erklärung:
 
-1. Mit `const` speichert ihr einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
+1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
 2. Eine Funktion die bei dem Event scroll etwas auf der Seite ausgeführt wird erstellt.
-3. In die Konstante namens "pixels" wird der Wert der Y-Achse gespeichert.
-4. In die Konstante namens "wght" wird die Rechnung 100 + der Wert der Y-Achse \* 0.4 gespeichert.
-5. In die Konstante namens "wdth" wird die Rechnung 100 + der Wert der Y-Achse \* 0.1 gespeichert.
+3. In die `const` namens "pixels" wird der Wert der Y-Achse gespeichert.
+4. In die `const` namens "wght" wird die Rechnung 100 + der Wert der Y-Achse x 0.4 gespeichert.
+5. In die `const` namens "wdth" wird die Rechnung 100 + der Wert der Y-Achse x 0.1 gespeichert.
 6. Für das `h1` Element werden die Werte der CSS-Eigenschaft `font-variation-settings` (`wght` und `wdth`) den vorher definierten Konstanten, also den Berechnungen `wght` und `wdth` zugeteilt.
 7. Somit verändern sich die Werte dieser CSS-Eigenschaft beim scrollen.
 
-> Ergo: Wenn ihr ein anderes Element (z.B. `p` oder `.text`) ansprechen wollt, müsst das statt "h1" in die Konstante oben speichern.
+> Wenn du ein anderes Element (z.B. `p` oder `.text`) animieren möchtest, muss dieses statt "h1" in die Konstante oben gespeichert werden. Probiere ein wenig mit den Zahlen der der Konstanten `wght` und `wdth` herum um für deine Scroll Länge und Schrift die richtige Einstellung zu finden.

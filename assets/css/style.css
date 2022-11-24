@@ -60,7 +60,6 @@ body {
 	background-color: #e5e5f7;
 	background-image: linear-gradient(#43278f 2px, transparent 2px), linear-gradient(to right, #43278f 2px, #e5e5f7 2px);
 	background-size: 8rem 8rem;
-	height: 6000px;
 }
 
 header {
@@ -128,7 +127,7 @@ a {
 h1 {
 	position: fixed;
 	z-index: 2;
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: max-content;
@@ -153,6 +152,10 @@ div {
 	border-radius: 10px; /* Rand-Radius. Ermöglicht runde Ecken. */
 	padding: 0.5rem;
 	margin: 3rem; /*man kann margin entweder über margin-top, margin-left etc. angeben, oder über margin. margin: 10px; heißt, an allen seiten 10px. margin 10px 5px; heißt oben und unten 10px, und an den seiten 5px. margin: 10px 5px 15px 20px; heißt oben 10px, rechts 5px, unten 15px, links 20px abstand. das ganze geht also im uhrzeigersinn*/
+}
+
+main div:first-child {
+	margin-top: 10%;
 }
 
 main div:nth-child(2) {
