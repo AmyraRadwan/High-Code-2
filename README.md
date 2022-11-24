@@ -69,4 +69,6 @@ Das Ende deiner HTML sollte dann so aussehen:
 
 1. Öffne deine `main.js` Datei und schreibe `console log("Hello World");` rein.
 2. Speichern nicht vergessen.
-3. Öffne deine `index.html` Datei im Browser und öffne die Konsole (`option+cmd+i` oder Rechtsklick > Untersuchen/Inspect )
+3. Öffne deine `index.html` Datei im Browser.
+4. Öffne die Konsole (`option`+`cmd`+`i` oder Rechtsklick > Untersuchen/Inspect).
+5. Wenn du deine Nachricht in der Konsole entdeckst hat alles geklappt!
