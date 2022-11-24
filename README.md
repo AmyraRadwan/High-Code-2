@@ -6,9 +6,9 @@ Tagesziel ist es:
 
 1. Eine variable Schrift in CSS einbinden und mit Javascript zu animieren.
 
-   [1.0. Einbinden einer variablen Schrift](https://github.com/AmyraRadwan/High-Code-2#sparkles-step-10--einbinden-einer-variablen-schrift)
-   [1.1. Einbinden einer Javascript Datei](https://github.com/AmyraRadwan/High-Code-2#fire-step-11--einbinden-einer-javascript-datei)
-   [1.2. Die Schrift beim scrollen animieren](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-12--die-schrift-beim-scrollen-animieren)
+   - [1.0. Einbinden einer variablen Schrift](https://github.com/AmyraRadwan/High-Code-2#sparkles-step-10--einbinden-einer-variablen-schrift)
+   - [1.1. Einbinden einer Javascript Datei](https://github.com/AmyraRadwan/High-Code-2#fire-step-11--einbinden-einer-javascript-datei)
+   - [1.2. Die Schrift beim scrollen animieren](https://github.com/AmyraRadwan/High-Code-2#dizzy-step-12--die-schrift-beim-scrollen-animieren)
 
 2. Optional: Eine CSS Library einbinden für maximal annoying Schrift.
 
