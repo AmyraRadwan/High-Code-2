@@ -145,7 +145,7 @@ Wir bauen noch [obnoxious.css](https://tholman.com/obnoxious/) ein, eine CSS-Lib
 
 ## :fire: Step 2.1. – Einbinden der CSS-Library
 
-Um obnoxious.css einzubinden lade dir obnoxious.css :point_right: <a href="/assets/css/obnoxious.css" download>hier</a> herunter und speicher die Datei mir dem Namen `obnoxious.css` unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
+Um obnoxious.css einzubinden lade dir obnoxious.css :point_right: [hier](obnoxious.css.zip) herunter und speicher die Datei mir dem Namen `obnoxious.css` unter `assets` in den `css` Ordner. Als nächstes bindest du die Datei in den `<head>` Tag deiner `index.html` Datei:
 
 ```
 <head>
