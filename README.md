@@ -11,7 +11,7 @@ Tagesziel ist es:
 
 > Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
 
-## Step 1 – Einbinden einer variablen Schrift
+## Step 1.0 – Einbinden einer variablen Schrift
 
 Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
 
@@ -38,3 +38,13 @@ Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/ma
 	src: url("../fonts/CollectivePatternsVF.ttf");
 }
 ```
+
+Teile die Schrift jetzt einem Textelement oder Klasse deiner Wahl zu. (z.B. `h1` oder `.text`)
+
+```
+h1 {
+    font-family: Edu Monument;
+}
+```
+
+## Step 1.1 –
