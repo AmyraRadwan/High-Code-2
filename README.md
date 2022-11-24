@@ -17,7 +17,7 @@ Tagesziel ist es:
 
 **Auf geht's!**
 
-> Wenn du letztes mal nicht da warst kannst du mit unsere :point_right:[Vorlage]() herunterladen und damit arbeiten.
+> Wenn du letztes mal nicht da warst kannst du mit unsere :point_right:[Vorlage](vorlage.zip) herunterladen und damit arbeiten.
 
 ## :sparkles: Step 1.0. – Einbinden einer variablen Schrift
 
