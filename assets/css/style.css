@@ -1,6 +1,6 @@
-/* ---------------------------------------------------------------------
-    RESET von Standard Browsereinstellungen die je nach Browser variieren
-------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------
+    RESET von Standard Browser Einstellungen die je nach Browser variieren
+--------------------------------------------------------------------------- */
 * {
 	margin: 0;
 	padding: 0;
@@ -21,7 +21,7 @@ ul {
 }
 
 img {
-	/* bilder */
+	/* Bilder */
 	width: 100%;
 }
 
@@ -74,9 +74,9 @@ main {
 	align-items: flex-start;
 }
 
-/* --------------
+/* -----------
     LINKS
-----------------*/
+-------------- */
 
 a {
 	font-family: Bandeins, Arial, Helvetica, sans-serif; /* Schriftart mit Fallback Schriften, siehe wie weiter oben eingebunden. */
