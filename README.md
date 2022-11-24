@@ -1,17 +1,21 @@
-# High Code 2
+# :crystal_ball: High Code 2
 
 Heute werden wir Javasript erkunden... yay!
 
 Tagesziel ist es:
 
-1. selbst eine variablen Schrift einzubinden und diese mit Javascript zu animieren.
-2. Wenn wir es schaffen binden wir danach noch eine CSS Library ein mit der wir die Schrift maximal annoying machen.
+Eine variable Schrift in CSS einbinden und mit Javascript zu animieren.
+1.0 – Einbinden einer variablen Schrift
+1.1 – Einbinden einer Javascript Datei
+1.2 – Die Schrift beim scrollen animieren
+
+Optional: Eine CSS Library einbinden für maximal annoying Schrift.
 
 **Auf gehts!**
 
 > Wenn du letztes mal nicht da warst kannst du mit unserer [Vorlage]() arbeiten.
 
-## Step 1.0 – Einbinden einer variablen Schrift :sparkles:
+## :sparkles: Step 1.0 – Einbinden einer variablen Schrift
 
 Lade dir die [Schriftdateien](https://github.com/AmyraRadwan/High-Code-2/tree/main/assets/fonts) runter und binde sie folgendermaßen in deine CSS Datei ein.
 
@@ -49,14 +53,14 @@ h1 {
 
 Prüfe jetzt ob deine Schrift angezeigt wird! :eyes:
 
-## Step 1.1 – Einbinden einer Javascript Datei :fire:
+## :fire: Step 1.1 – Einbinden einer Javascript Datei
 
 1. Erstelle in deinem `assets` Ordner einen Ordner `js`
 2. Erstelle darin eine Datei namens `main.js`
 3. Gehe in deine `index.html` und scrolle runter zum closing `</body>` tag.
 4. Erstelle eine Zeile über den Tag einen `<script src="assets/js/main.js"></script>` tag.
 
-Das Ende deiner HTML sollte dann so aussehen:
+Das Ende deiner HTML sollte so aussehen:
 
 ```
 ...
@@ -65,7 +69,7 @@ Das Ende deiner HTML sollte dann so aussehen:
 </html>
 ```
 
-### Überprüfe ob die Datei richtig eingebunden wurde :link:
+### :link: Überprüfe ob die Datei richtig eingebunden wurde
 
 1. Öffne deine `main.js` Datei und schreibe `console.log("Hello World");` rein.
 2. Speichern nicht vergessen.
@@ -73,7 +77,7 @@ Das Ende deiner HTML sollte dann so aussehen:
 4. Öffne die Konsole (`option`+`cmd`+`i` oder Rechtsklick > Untersuchen/Inspect).
 5. Wenn deine Nachricht in der Konsole ausgegeben wird hat alles geklappt! :clap:
 
-## Step 1.2 – Die Schrift beim scrollen animieren :dizzy:
+## :dizzy: Step 1.2 – Die Schrift beim scrollen animieren
 
 Jetzt animieren wir die Schrift beim scrollen.
 Fixiere ein Element auf deiner Seite beim scrollen mit `position: fixed` in deiner CSS-Datei.
@@ -87,7 +91,7 @@ h1 {
 
 Öffne als nächstes deine `main.js` Datei und kopiere diesen Code rein.
 
-> Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns diesmal vertrauen. Wir erklären euch danach wie es funktioniert.
+> :warning: Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns diesmal vertrauen. Wir erklären euch danach wie es funktioniert.
 
 ```
 const h1 = document.querySelector("h1");
@@ -102,7 +106,7 @@ window.addEventListener("scroll", function () {
 });
 ```
 
-### Erklärung:
+### :question: Erklärung:
 
 1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
 2. Eine Funktion die bei dem Event scroll etwas auf der Seite ausgeführt wird erstellt.
