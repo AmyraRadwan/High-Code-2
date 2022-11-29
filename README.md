@@ -1,4 +1,4 @@
-# :crystal_ball: High Code 2
+# :crystal_ball: justmytype.js
 
 Heute werden wir Javascript erkunden... yay!
 
