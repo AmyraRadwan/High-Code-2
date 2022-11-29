@@ -110,29 +110,29 @@ h1 {
 > :warning: Achtung! Eigentlich kopiert man nicht einfach irgendwelchen Code ohne ihn zu verstehen. Hier müsst ihr uns dieses mal vertrauen. Wir erklären euch unten wie es funktioniert.
 
 ```
-const h1 = document.querySelector("h1");
+const animation = document.querySelector("h1");
 
 window.addEventListener("scroll", function () {
 	const pixels = window.pageYOffset;
 
-	const wght = 100 + pixels * 0.9;
-	const wdth = 100 + pixels * 0.9;
+	const fontweight = 100 + pixels * 0.9;
+	const fontwidth = 100 + pixels * 0.9;
 
-	h1.style.fontVariationSettings = `"wght" ${wght}, "wdth" ${wdth}`;
+	animation.style.fontVariationSettings = `"wght" ${fontweight}, "wdth" ${fontwidth}`;
 });
 ```
 
 ###### Erklärung:
 
-1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "h1" gespeichert.
+1. `const` (Konstante) speichert einen Wert. Hier wird das `h1` Element in die Konstante names "animation" gespeichert.
 2. Eine Funktion die bei dem Event scroll etwas auf der Seite ausgeführt wird erstellt.
 3. In die `const` namens "pixels" wird der Wert der Y-Achse gespeichert.
-4. In die `const` namens "wght" wird die Rechnung 100 + der Wert der Y-Achse x 0.4 gespeichert.
-5. In die `const` namens "wdth" wird die Rechnung 100 + der Wert der Y-Achse x 0.1 gespeichert.
-6. Für das `h1` Element werden die Werte der CSS-Eigenschaft `font-variation-settings` (`wght` und `wdth`) den vorher definierten Konstanten, also den Berechnungen `wght` und `wdth` zugeteilt.
+4. In die `const` namens "fontweight" wird die Rechnung 100 + der Wert der Y-Achse x 0.9 gespeichert.
+5. In die `const` namens "fontwidth" wird die Rechnung 100 + der Wert der Y-Achse x 0.9 gespeichert.
+6. Für das `h1` Element werden die Werte der CSS-Eigenschaft `font-variation-settings` (`wght` und `wdth`) den vorher definierten Konstanten, also den Berechnungen `fontweight` und `fontwidth` zugeteilt.
 7. Somit verändern sich die Werte dieser CSS-Eigenschaft beim scrollen.
 
-> Wenn du ein anderes Element (z.B. `p` oder `.text`) animieren möchtest, muss dieses statt "h1" in die Konstante oben gespeichert werden. Probiere ein wenig mit den Zahlen der der Konstanten `wght` und `wdth` herum um für deine Scroll Länge und Schrift die richtige Einstellung zu finden.
+> Wenn du ein anderes Element (z.B. `p` oder `.text`) animieren möchtest, muss dieses statt "h1" in die Konstante oben gespeichert werden. Probiere ein wenig mit den Zahlen der der Konstanten `fontweight` und `fontwidth` herum um für deine Scroll Länge und Schrift die richtige Einstellung zu finden.
 
 THE END :boom:
 
